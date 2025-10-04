@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>恋爱日记</title>
+ <style>
+      *{
+     padding:0;
+     margin:0;
+      }
+    
+    h1{
+      color:white;
+      }
+    img{
+      width:98%;
+      margin:1px;
+      }
+    p{
+      font-size:10px;
+      }
+ </style>
+  </head>
+  <body bgcolor="#ffaef5">	
+<center>
+	<h1>Welcome our life</h1>
+</center>
+<center>
+	<h3>婷&兴の恋爱日记</h3>  
+ <hr>
+  <center>开启音乐更好哦~<audio controls="" autoplay="autoplay" loop="">
+ <source controls="" src="1.mp3">
+ </center>
+ </audio>
+ <h2>照片墙(女朋友)</h2>
+</center>
+    <center>
+    <p>这张照片是老婆在我回家时发我的超开心哦</p>
+     <img src="1.jpg"/>
+    <p>这张是老婆给我比的爱心哦~很骄傲呢~</p>
+     <img src="2.jpg"/>
+    <p>也是萌萌嘟~</p>
+     <img src="3.jpg"/>
+    <p>萌界一把手</p>
+     <img src="4.jpg"/>
+    <p>有种少御的感jio~</p>
+     <img src="5.jpg"/>
+    <p>被揍的鼻青脸肿</p>
+     <img src="6.jpg"/>
+    <p>这真的太拽了！</p>
+     <img src="7.jpg"/>
+    <p>解锁新人物：魔丸婷</p>
+     <img src="8.jpg"/>
+    <p>校服这张真的神了！</p>
+     <img src="9.png"/>
+    <p>最喜欢的一张哦！~</p>
+     <img src="10.jpg"/>
+    <p>美！好美！特别美！真的好美！</p>
+     <img src="11.jpg"/>
+    <p>小样的！想迷死我吗？</p>
+     <img src="12.jpg"/>
+    <p>虽然有点迷惑但莫名的可爱✧⁺⸜(●˙▾˙●)⸝⁺✧</p>
+     <img src="13.jpg"/>
+    <p>很喜欢的一张~</p>
+     <img src="14.jpg"/>
+     </center>
+  <hr>
+        <center>
+       <h2>照片墙(男朋友)</h2>
+        <p>人类迷惑行为！</p>
+         <img src="15.jpg"/>
+        <p>有点芒果的感jio~</p>
+         <img src="16.jpg"/>
+        <p>还可以</p>
+         <img src="17.jpg"/>
+        <p>请搭配魔丸婷食用</p>
+         <img src="18.jpg"/>
+        <p>老婆亲手P的很喜欢！</p>
+         <img src="20.jpg"/><hr>
+        </center>
+    <center>
+     <h2>誓言区</h2>
+     1.谈恋爱(进行中...)
+     <br>
+     2.见面(未进行)
+     <br>
+     3.结婚(未进行)
+     <br>
+     4.白头偕老(未进行)
+    </center>
+    <style>
+        #countdown {
+            font-size: 48px;
+            text-align: center;
+            margin-top: 0px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<center><hr><h2>见面倒计时</h2></center>
+    <div id="countdown">00:00:00</div>
+
+    <script>
+        const targetTime = new Date();
+        targetTime.setHours(targetTime.getHours() + 35040);
+
+        function updateCountdown() {
+            const now = new Date();
+            const diff = targetTime - now;
+
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            const display = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            document.getElementById('countdown').textContent = display;
+
+            if (diff <= 0) {
+                clearInterval(timer);
+                document.getElementById('countdown').textContent = "时间到！";
+            }
+        }
+
+        updateCountdown();
+        const timer = setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>
